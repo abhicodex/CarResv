@@ -53,7 +53,7 @@ public class CarResv {
             }
             
             for(Booking bookditr : bookings){
-                if(bookditr.carNoNeed == bk.carNoNeed && bookditr.date == bk.date){ 
+                if(bookditr.carNoNeed == bk.carNoNeed && bookditr.date.equals(bk.date)){ 
                     cap--;
                     System.out.println("remaincap = "+cap);
                  }
